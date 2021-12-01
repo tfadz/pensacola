@@ -1,0 +1,13 @@
+.footer {
+  padding: 2rem 0;
+  background: $gray;
+  color: $white;
+
+  .menu {
+    display: flex;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
