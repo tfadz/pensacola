@@ -19,7 +19,7 @@
 
       &.current-menu-item {
         > a {
-          color: $gold;
+          color: $blue;
         }
       }
 
@@ -36,7 +36,7 @@
         }
 
         &:hover {
-          color: $gold;
+          color: $blue;
         }
       }
     }
@@ -70,7 +70,7 @@
 
         &:before {
           content: "";
-          border-bottom: 2px solid $gold;
+          border-bottom: 2px solid $blue;
           width: 100%;
           transition: .3s ease-in-out;
           display: inline-block;
@@ -108,7 +108,7 @@
           }
 
           &:hover {
-            color: $gold;
+            color: $blue;
           }
         }
       }
