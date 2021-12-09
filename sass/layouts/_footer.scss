@@ -5,6 +5,9 @@
 
   .menu {
     display: flex;
+    li {
+      margin-right: 1rem;
+    }
 
     a {
       text-decoration: none;
