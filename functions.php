@@ -138,6 +138,7 @@ add_action( 'widgets_init', 'premier_widgets_init' );
 
 require get_template_directory() . '/inc/theme-styles.php';
 require get_template_directory() . '/inc/theme-navigation.php';
+require get_template_directory() . '/inc/theme-acf.php';
 require get_template_directory() . '/inc/acf-blocks.php';
 
 
