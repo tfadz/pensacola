@@ -4,9 +4,9 @@
  * Enqueue scripts and styles.
  */
 function pensacola_scripts() {
+  wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css' );
 	wp_enqueue_style( 'pensacola-style', get_stylesheet_uri(), array(), _S_VERSION );
   wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' );
-  wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css' );
 
 	wp_style_add_data( 'pensacola-style', 'rtl', 'replace' );
   
