@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				Pensacola_posted_on();
-				Pensacola_posted_by();
+				pensacola_posted_on();
+				pensacola_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -33,7 +33,7 @@
 	<div class="entry-content">
   <div class="" style="float: left;display: block;min-width: 200px;">
     <div style="margin-right: 1rem;">
-        <?php Pensacola_post_thumbnail(); ?>
+        <?php pensacola_post_thumbnail(); ?>
       </div>
     
   </div>
@@ -64,6 +64,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php Pensacola_entry_footer(); ?>
+		<?php pensacola_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

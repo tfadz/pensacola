@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				Pensacola_posted_on();
-				Pensacola_posted_by();
+				pensacola_posted_on();
+				pensacola_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php Pensacola_post_thumbnail(); ?>
+	<?php pensacola_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php Pensacola_entry_footer(); ?>
+		<?php pensacola_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
