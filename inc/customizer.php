@@ -1,6 +1,6 @@
 <?php
 /**
- * Nutrition Collab Theme Customizer
+ * Pensacola Theme Customizer
  *
  * @package Pensacola
  */
