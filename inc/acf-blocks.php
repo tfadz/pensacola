@@ -8,7 +8,16 @@ function acf_blocks_init()
         'name'              => 'hero',
         'title'             => __('Hero'),
         'render_template'   => '/template-parts/blocks/hero.php',
-        'category'          => 'pensacola-blocks'
+        'category'          => 'pensacola-blocks',
+        'mode'              => 'edit',
+    ));
+    
+    acf_register_block_type(array(
+        'name'              => 'hero',
+        'title'             => __('Hero'),
+        'render_template'   => '/template-parts/blocks/vertical-tabs.php',
+        'category'          => 'pensacola-blocks',
+        'mode'              => 'edit',
     ));
 
 
