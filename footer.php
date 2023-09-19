@@ -11,7 +11,7 @@
 ?>
 
 <footer id="colophon" class="footer">
-  <div class="container">
+  <div class="container footer-main">
     <div class="row">
       <div class="col">
         <?php

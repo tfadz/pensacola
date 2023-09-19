@@ -1,10 +1,15 @@
 .footer {
   padding: 2rem 0;
-  background: $gray;
-  color: $white;
+  color: $black;
+
+  &-main {
+    border-top: 2px solid $black;
+    padding-top: 2rem;
+  }
 
   .menu {
     display: flex;
+
     li {
       margin-right: 1rem;
     }
