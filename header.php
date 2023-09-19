@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,700&display=swap" rel="stylesheet">
     
 </head>
 
@@ -36,7 +36,7 @@
                             <?php if(has_custom_logo()) : ?>
                                 <?php the_custom_logo(); ?>
                             <?php else : ?>
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="no-logo"><?php echo get_bloginfo(); ?></a>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/screenshot.png" alt=""></a>
                             <?php endif; ?>
                             <?php
                             $pensacola_description = get_bloginfo( 'description', 'display' );
