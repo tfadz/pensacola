@@ -1,4 +1,4 @@
-var premierFunctions = (function($) {
+var pensacolaFunctions = (function($) {
 
   var init = function() {
     sliders();
@@ -73,5 +73,5 @@ return {
 
 })(jQuery);
 
-jQuery(document).ready(premierFunctions.init );
+jQuery(document).ready(pensacolaFunctions.init );
 
