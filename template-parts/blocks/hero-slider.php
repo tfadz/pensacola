@@ -12,7 +12,7 @@
                     <div class="hero-main">
                         <div class="hero-main-content">
                             <?php if (get_field('hero_title')) :  ?><h1 data-aos="fade-up" data-aos-delay="300"><?php the_field('hero_title') ?></h1><?php endif; ?>
-                            <?php if (get_field('hero_text')) :  ?><div data-aos="fade-up" data-aos-delay="400"><?php the_field('hero_text') ?></div><?php endif; ?>
+                            <?php if (get_field('hero_text')) :  ?><div data-aos="fade-up" data-aos-delay="400"><p><?php the_field('hero_text') ?></p></div><?php endif; ?>
                     <!-- <a data-aos="fade-up" data-aos-delay="500" data-aos-offset="-300" href="#patient-forms" class="button">Learn More About Patient Care <i class="fal fa-heart-circle"></i></a> -->
                 </div>
             </div>

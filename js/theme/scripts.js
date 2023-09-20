@@ -6,7 +6,6 @@ var pensacolaFunctions = (function($) {
   },
 
   sliders = function() {
-    alert("hello");
 
     var $heroslider = $('.hero-slider');
     
