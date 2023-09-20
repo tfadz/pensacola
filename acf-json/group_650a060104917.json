@@ -1,10 +1,10 @@
 {
     "key": "group_650a060104917",
-    "title": "Hero",
+    "title": "Hero Slider",
     "fields": [
         {
             "key": "field_650a06014ac3e",
-            "label": "Hero Title",
+            "label": "Title",
             "name": "hero_title",
             "aria-label": "",
             "type": "text",
@@ -23,11 +23,11 @@
             "append": ""
         },
         {
-            "key": "field_650a060f4ac3f",
-            "label": "Hero Image",
-            "name": "hero_image",
+            "key": "field_650b162043c05",
+            "label": "Text",
+            "name": "hero_text",
             "aria-label": "",
-            "type": "image",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,16 +36,61 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_650a060f4ac3f",
+            "label": "Slider",
+            "name": "hero_slider",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add image",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_650b15db4b40b",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_650a060f4ac3f"
+                }
+            ]
         }
     ],
     "location": [
@@ -53,7 +98,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/hero-img"
+                "value": "all"
             }
         ]
     ],
@@ -66,5 +111,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695155792
+    "modified": 1695225861
 }

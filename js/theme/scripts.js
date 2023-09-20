@@ -6,41 +6,27 @@ var pensacolaFunctions = (function($) {
   },
 
   sliders = function() {
-    if($('.home')[0]) {
-      $('.slider').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        dots: false,
-        centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerPadding: '0',
-        cssEase: 'ease-in-out',
-        speed: 1000,
-        fade: true,
-        infinite: true,
-        pauseOnFocus: false,
-        pauseOnHover: false
-      });
+    alert("hello");
+
+    var $heroslider = $('.hero-slider');
+    
+    $heroslider.slick({
+      autoplay: true,
+      autoplaySpeed: 9600,
+      arrows: false,
+      dots: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerPadding: '0',
+      cssEase: 'ease',
+      speed: 1800,
+      fade: true,
+      infinite: true,
+      pauseOnFocus: false,
+      pauseOnHover: false
       
-      $('.testimonials').slick({
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerPadding: '0',
-        cssEase: 'ease-in-out',
-        speed: 800,
-        fade: true,
-        infinite: true,
-        pauseOnFocus: false,
-        pauseOnHover: false
-      });
-    }
+    });
   },
   
   mobileMenu = function() {
