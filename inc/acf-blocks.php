@@ -19,7 +19,14 @@ function acf_blocks_init()
         'render_template'   => '/template-parts/blocks/vertical-tabs.php',
         'mode'              => 'edit',
         'icon' => file_get_contents( get_template_directory() . '/assets/images/logo.svg' ),
-
+    ));
+    
+    acf_register_block_type(array(
+        'name'              => 'parallax',
+        'title'             => __('Parallax Image'),
+        'render_template'   => '/template-parts/blocks/parallax.php',
+        'mode'              => 'edit',
+        'icon' => file_get_contents( get_template_directory() . '/assets/images/logo.svg' ),
     ));
 
 

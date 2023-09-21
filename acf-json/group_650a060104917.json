@@ -98,7 +98,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
+                "value": "acf\/hero-slider"
             }
         ]
     ],
@@ -111,5 +111,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695225861
+    "modified": 1695254685
 }
