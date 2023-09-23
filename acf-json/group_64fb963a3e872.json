@@ -25,11 +25,11 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_64fb964f8aa7d",
-                    "label": "Icon",
-                    "name": "icon",
+                    "key": "field_650ef20b2b243",
+                    "label": "Select Icon",
+                    "name": "select_icon",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -38,11 +38,21 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "<i class=\"fas fa-globe\"><\/i>",
-                    "prepend": "",
-                    "append": "",
+                    "choices": {
+                        "globe": "Globe",
+                        "video": "Video",
+                        "arrow": "Arrow",
+                        "people": "People",
+                        "person": "Person",
+                        "document": "Document"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
                     "parent_repeater": "field_64fb963b8aa7c"
                 },
                 {
@@ -125,5 +135,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695478084
+    "modified": 1695478785
 }
