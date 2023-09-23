@@ -12,34 +12,158 @@
       display: none;
     }
 
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+      background: $forest;
+      width: 100%;
+    }
+
     > li {
-      &:not(:last-child) {
-        margin-right: 1.5rem;
+      position: relative;
+
+      &:before {
+        content: "";
+        bottom: 5px;
+        border-bottom: 2px solid $green;
+        left: 0;
+        right: 0;
+        transition: .3s ease-in-out;
+        width: 0%;
+        position: absolute;
+        margin: 0 auto;
       }
 
-      &.current-menu-item {
-        > a {
-          color: $green;
-          font-weight: $bold;
+      &.current_page_item,
+      &.current-menu-item,
+      &.current_page_ancestor,
+      &.current-menu-ancestor {
+        &:before {
+          content: "";
+          border-bottom: 2px solid $green;
+          bottom: 5px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 70%;
+        }
+      }
 
+      &.menu-item-has-children {
+        position: relative;
+
+        a {
+          padding-right: 2rem;
+        }
+
+        &:after {
+          content: "\f107";
+          display: inline-block;
+          font-family: "Font Awesome 5 Pro";
+          font-size: 1.65rem;
+          font-weight: 400;
+          color: $green;
+          position: absolute;
+          bottom: .15rem;
+          right: .35rem;
+          z-index: 1;
+        }
+
+        &:hover {
+          background: $forest!important;
+          color: $white;
+
+          > a {
+            color: $white;
+            text-shadow: none;
+          }
+
+          &:after, &:before {
+            content: none;
+          }
         }
       }
 
       > a {
         color: $black;
-        display: inline-block;
-        font-size: 1.25rem;
+        display: block;
         font-weight: $regular;
-        padding: .5rem;
+        font-size: 1.25rem;
+        padding: .5rem 1.5rem;
         position: relative;
         text-decoration: none;
+
 
         &:focus, &:visited {
           text-decoration: none;
         }
 
         &:hover {
-          color: $green;
+          color: $forest;
+          text-decoration: none;
+        }
+      }
+
+      &:hover {
+        &:before {
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 70%;
+          border-bottom: 2px solid $green;
+        }
+      }
+
+      ul {
+        margin: 0;
+        background: $white;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -999em;
+        z-index: 99999;
+
+        > li {
+          padding-bottom: 0.4rem;
+          padding-left: .5rem;
+          position: relative;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          transition: none;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &:before {
+            content: none;
+          }
+
+          > a {
+            text-shadow: none;
+            min-width: 150px;
+            color: $white;
+            font-size: 1.15rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem 0.25rem;
+            display: block;
+            position: relative;
+            text-decoration: none;
+
+            &:hover {
+              color: $white;
+            }
+          }
+
+          &:hover {
+            background: rgba($green, .5);
+
+            > a {
+              color: $white;
+            }
+          }
         }
       }
     }

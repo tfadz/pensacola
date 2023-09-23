@@ -44,7 +44,10 @@
                         "arrow": "Arrow",
                         "people": "People",
                         "person": "Person",
-                        "document": "Document"
+                        "document": "Document",
+                        "camera": "Camera",
+                        "link": "Link",
+                        "heart": "Heart"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -135,5 +138,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695478785
+    "modified": 1695491806
 }

@@ -75,10 +75,10 @@
       z-index: 99999;
 
       li {
-        margin: 0 0 .5rem 0;
+        margin: 0 0 .75rem 0;
 
         button {
-          background: rgba($white, 0.5);
+          background: rgba($white, 0.75);
           border: none;
           border-radius: 50%;
           border: none;
@@ -86,10 +86,10 @@
           cursor: pointer;
           display: block;
           font-size: 0;
-          height: .8rem;
+          height: 1rem;
           line-height: 0;
           outline: 0;
-          width: .8rem;
+          width: 1rem;
 
           &:before {
             font-size: 1rem;
@@ -98,7 +98,7 @@
 
         &.slick-active {
           button {
-            background: $sand;
+            background: $green;
             border: none;
           }
         }
