@@ -37,6 +37,15 @@ function acf_blocks_init()
         'icon' => file_get_contents( get_template_directory() . '/assets/images/logo.svg' ),
 
     ));
+    
+    acf_register_block_type(array(
+        'name'              => 'cards',
+        'title'             => __('Cards'),
+        'render_template'   => '/template-parts/blocks/cards.php',
+        'mode'              => 'edit',
+        'icon' => file_get_contents( get_template_directory() . '/assets/images/logo.svg' ),
+
+    ));
 
 
 }

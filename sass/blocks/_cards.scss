@@ -1,0 +1,67 @@
+.cards {
+  &-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    // background: $gray;
+
+    .col {
+      height: 100%;
+      display: block;
+    }
+
+    .card {
+      height: 100%;
+      text-align: center;
+      text-decoration: none;
+      padding: 3rem 1rem;
+      display: block;
+      justify-content: center;
+      align-items: center;
+
+      // background: rgba($black, 0.06);
+      border: 1px solid rgba($gray, 0.5);
+      min-height: 340px;
+      overflow: hidden;
+      transition: .2s ease-in-out;
+
+      &-icon {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .subhead {
+        color: $forest;
+        font-size: 1.25rem;
+        font-weight: $bold;
+        padding: .5rem 0 1rem 0;
+      }
+
+      h3 {
+        color: $black;
+        padding: 0;
+        line-height: normal;
+        font-weight: $bold;
+      }
+
+      .fas {
+        font-size: 2.8rem;
+        color: $forest;
+      }
+
+      &:hover {
+        background: rgba($forest, 1);
+
+        .subhead, h3 {
+          color: $white;
+        }
+
+        .fas {
+          color: $green;
+        }
+      }
+    }
+  }
+}
