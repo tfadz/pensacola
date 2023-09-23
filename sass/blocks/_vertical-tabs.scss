@@ -1,0 +1,232 @@
+.vertical-tabs {
+  background: $forest;
+  color: white;
+  padding: 6rem 0 5rem 0;
+
+  @media (max-width: $medium) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+  }
+
+  &-container {
+    display: flex;
+
+    @media (max-width: $medium) {
+      display: block;
+    }
+  }
+
+  .nav-pills {
+    padding: 0;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: noone;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: $bold;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    color: #CBCED9;
+  }
+
+  &-col {
+    border-right: 1px solid $white;
+    width: 54%;
+    padding-bottom: 8rem;
+
+    @media (max-width: $medium) {
+      display: none;
+      width: 100%;
+      border-right: none;
+      margin-bottom: 4rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__tabs {
+    list-style: none !important;
+    padding: 0 !important;
+
+    li {
+      margin-bottom: 1.5rem;
+
+      a {
+        color: #8D909A;
+        font-size: 2.5rem;
+        line-height: 1;
+
+        @media (max-width: $medium) {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+
+        &.active {
+          color: $white;
+          font-weight: $bold;
+          position: relative;
+
+          &:after {
+            content: "\f105";
+            display: inline-block;
+            font-family: "Font Awesome 5 Pro";
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            height: 1rem;
+          }
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: $green;
+
+          &.active {
+            color: $white;
+            font-weight: $bold;
+            position: relative;
+						cursor: auto;
+
+            &:after {
+              content: "\f105";
+              display: inline-block;
+              font-family: "Font Awesome 5 Pro";
+              font-size: 1.5rem;
+              margin-left: 1rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 4rem;
+    width: 46%;
+
+    &__inner {
+      ul {
+        list-style: disc;
+        padding: .75rem 0 1.5rem 2.5em;
+
+        li {
+          padding-bottom: .5rem;
+        }
+      }
+
+      .button {
+        border: 1px solid $white;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .cta-link {
+      border: 1px solid $white;
+      display: inline-block;
+      padding: 1rem 1.75rem;
+      font-weight: $bold;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+
+      &:hover, &:focus {
+        background: $white;
+        color: $black;
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: $medium) {
+      width: 100%;
+      padding-left: 0;
+
+      & > .tab-pane {
+        display: block;
+      }
+
+      .vertical-tabs__content__inner {
+        display: none;
+        padding-bottom: 2rem;
+      }
+
+      h4 {
+        font-size: 2rem;
+        font-family: $primary-font;
+        -webkit-font-smoothing: auto;
+        font-weight: $regular;
+        color: $white;
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-right: 3.5rem;
+
+        &:after {
+          content: "\f107";
+          display: block;
+          font-family: "Font Awesome 5 Pro";
+          font-size: 2rem;
+          position: absolute;
+          right: 0;
+          height: 1rem;
+          top: -.25rem;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &.reversed {
+    background: $white;
+    color: black;
+
+    .vertical-tabs-col {
+      border-right: 1px solid $black;
+      padding-bottom: 5rem;
+
+      @media (max-width: $medium) {
+        border-right: none;
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    h4 {
+      color: $black;
+    }
+
+    a {
+      color: #8D909A;
+
+      &.active {
+        color: $black;
+      }
+    }
+
+    .vertical-tabs__tabs {
+      li {
+        a {
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+
+    .cta-link {
+      color: $black;
+      border: 1px solid $black;
+
+      &:hover, &:focus {
+        background: $black;
+        color: $white;
+      }
+    }
+  }
+}

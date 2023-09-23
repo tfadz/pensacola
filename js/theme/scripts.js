@@ -3,6 +3,7 @@ var pensacolaFunctions = (function($) {
   var init = function() {
     sliders();
     mobileMenu();
+    tabs();
   },
 
   sliders = function() {
@@ -40,6 +41,20 @@ var pensacolaFunctions = (function($) {
     $('li.menu-item-has-children').click(function (e) {
       $(this).find('.sub-menu').toggle();
     });
+  },
+  
+  tabs = function() {
+  $('.vertical-tabs__tabs li:first-child a').trigger("click");
+  
+  if (window.matchMedia('(max-width: 1024px)').matches) {
+    $('.vertical-tabs__content .tab-pane h4').click(function(event) {
+      $(this).next().toggle();
+    });
+    $('.timeline-tabs__content .tab-pane h4').click(function(event) {
+      $(this).next().toggle();
+    });
+  }
+
   }
   
   
