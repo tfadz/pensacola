@@ -33,7 +33,7 @@ function Pensacola_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'premier-style',
+				'stylesheet' => 'pensacola-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

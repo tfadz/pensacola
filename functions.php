@@ -12,7 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-if ( ! function_exists( 'premier_setup' ) ) :
+if ( ! function_exists( 'pensacola_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,7 +20,7 @@ if ( ! function_exists( 'premier_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function premier_setup() {
+	function pensacola_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -75,7 +75,7 @@ if ( ! function_exists( 'premier_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'premier_custom_background_args',
+				'pensacola_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -102,7 +102,7 @@ if ( ! function_exists( 'premier_setup' ) ) :
 		);
 	}
 endif;
-add_action( 'after_setup_theme', 'premier_setup' );
+add_action( 'after_setup_theme', 'pensacola_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -111,17 +111,17 @@ add_action( 'after_setup_theme', 'premier_setup' );
  *
  * @global int $content_width
  */
-function premier_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'premier_content_width', 640 );
+function pensacola_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'pensacola_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'premier_content_width', 0 );
+add_action( 'after_setup_theme', 'pensacola_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function premier_widgets_init() {
+function pensacola_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'pensacola' ),
@@ -134,7 +134,7 @@ function premier_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'premier_widgets_init' );
+add_action( 'widgets_init', 'pensacola_widgets_init' );
 
 require get_template_directory() . '/inc/theme-styles.php';
 require get_template_directory() . '/inc/theme-navigation.php';
